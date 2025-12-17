@@ -1,0 +1,466 @@
+/* start normalaization */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+/* end normalaization */
+
+/* start navbar */
+nav.navbar{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav.navbar a.navbar-brand{
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+ul.navbar-nav li.nav-item{
+    margin-right: 15px;
+}
+
+ul.navbar-nav .nav-link{
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.navbar-nav li.nav-item{
+    position: relative;
+    
+}
+
+.navbar-nav li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.navbar-nav li:hover::after{
+    width: 70%;
+}
+
+div.collapse ul.navbar-nav .nav-link.active{
+    color: white;
+    border-bottom: 3px solid white ;
+    width: 70%;
+}
+
+nav .container .navbar-toggler-icon{
+    color: white;
+}
+
+/* end navbar */
+
+/* start header */
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 86px;
+}
+
+h1::after{
+    content: '|';
+    animation: typing 6s infinite;
+    font-size: 2.5rem;
+    line-height: 60px;
+}
+
+@keyframes typing{
+    0%{content: ' |';}
+    2%{content: ' D|';}
+    4%{content: ' De|';}
+    6%{content: ' Des|';}
+    8%{content: ' Desi|';}
+    10%{content: ' Desig|';}
+    12%{content: ' Design|';}
+    14%{content: ' Designe|';}
+    16%{content: ' Designer|';}
+    18%{content: ' Designer |';}
+    20%{content: ' Designer|';}
+    22%{content: ' Designe|';}
+    24%{content: ' Design|';}
+    26%{content: ' Desig|';}
+    28%{content: ' Desi|';}
+    30%{content: ' Des|';}
+    32%{content: ' De|';}
+    34%{content: ' D|';}
+    36%{content: ' |';}
+    38%{content: '|';}
+    40%{content: '';}
+    42%{content: ' |';}
+    44%{content: ' D|';}
+    46%{content: ' De|';}
+    48%{content: ' Dev|';}
+    50%{content: ' Deve|';}
+    52%{content: ' Devel|';}
+    54%{content: ' Develop|';}
+    58%{content: ' Develope|';}
+    60%{content: ' Developer|';}
+    65%{content: ' Develope|';}
+    70%{content: ' Develop|';}
+    72%{content: ' Develo|';}
+    74%{content: ' Devel|';}
+    78%{content: ' Deve|';}
+    79%{content: ' Dev|';}
+    80%{content: ' De|';}
+    85%{content: ' D|';}
+    90%{content: ' |';}
+    95%{content: '|';}
+    100%{content: '';}
+    
+}
+
+/* end header */
+
+/* start section1 */
+
+.progress{
+    border-radius: 0;
+    height: 0.75rem;
+    background-color: #cde1f8;
+}
+
+.col-lg-6 article h3{
+    width: fit-content;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 38px;
+}
+
+.col-lg-6 article p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 30px;
+    color: #4e4e4e ;
+}
+
+.col-lg-6 article h3::after{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background-color: #0078FF;
+}
+
+/* end section1 */
+
+/* start section2 */
+
+section#sercices h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+div.content p{
+    position: relative;
+}
+
+section#sercices div.content p::after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 4px;
+    top: 170%;
+    left: 48%;
+    background-color: #0078FF;
+}
+
+.col-md-4 .section2-icon{
+    border: 15px solid #0078FF;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    transition: 0.2s;
+}
+
+.section2-icon i{
+    font-size: 50px;
+}
+
+.section2-icon:hover{
+    border: none;
+    background-color: #0078FF;
+    color: white;
+}
+
+/* end section2 */
+
+/* start section3 */
+
+
+.section3{
+    height: 400px;
+    background-image: linear-gradient(#1459b9c0,#1459b9c0),url(../images/post-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.col-sm-3 div{
+    border: 15px solid white;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.col-sm-3 div i{
+    font-size: 30px;
+    color: white;
+}
+
+
+/* end section3 */
+
+
+/* start portfolio */
+
+section#work h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+div.content p{
+    position: relative;
+}
+
+section#work div.content p::after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 4px;
+    top: 170%;
+    left: 48%;
+    background-color: #0078FF;
+}
+
+.portfolio-span{
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 19px;
+    color: #4e4e4e;
+}
+
+.portfolio-span span{
+    color: #4C91FF;
+}
+
+section#work .card-img{
+    overflow: hidden;
+}
+
+section#work .card img:hover{
+    transform: scale(1.5);
+    
+}
+
+section#work .card img{
+    cursor: pointer;
+    transition: 1s;
+}
+
+section#work .card-body i{
+    font-size: 27px;
+    color: #0078FF;
+    border-color: #0078FF;
+    border: 2px solid #0078FF ;
+    cursor: pointer;
+}
+
+/* end portfolio */
+
+/* start carousel */
+
+.section-carousel{
+    height: 600px;
+    background-image: linear-gradient(#1459b9c0,#1459b9c0),url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+/* end carousel */
+
+
+/* start blog */
+
+section#blog h2{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+div.content p{
+    position: relative;
+}
+
+section#blog div.content p::after{
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 4px;
+    top: 170%;
+    left: 48%;
+    background-color: #0078FF;
+}
+
+img.card-img-top{
+    cursor: pointer;
+}
+
+.card .card-body a{
+    font-weight: 500;
+    font-size: 1.3125rem;
+    line-height: 25px;
+    color: black;
+    transition: 0.5s;
+}
+
+.card .card-footer a{
+    color: black;
+    transition: 0.5s;
+}
+
+section#blog .card-body a:hover, section#blog .card-footer a:hover {
+    color: #0078FF;
+}
+
+/* end blog */
+
+
+/* start contact */
+
+section#contact{
+    height: 800px;
+    background-image: linear-gradient(#1459b9c0,#1459b9c0),url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#contact .container{
+    min-height: 800px;
+}
+
+
+section#contact h3{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 38px;
+    position: relative;
+}
+
+section#contact h3::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 4px;
+    top: 120%;
+    left: 0%;
+    background-color: #0078FF;
+}
+
+section#contact textarea{
+    min-height: 150px;
+}
+
+.contact-icons i {
+    color: #0078FF;
+}
+
+.contact-icon{
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact-icon i{
+    font-size: 18px;
+    transition: 0.3s;
+    color: black;
+}
+
+.contact-icon:hover , .contact-icon:hover i{
+    background-color: #0078FF;
+    color: white;
+}
+
+
+/* end contact */
+
+
+/* start footer */
+
+footer{
+    background-color: #0162D3 ;
+}
+
+
+/* start footer */
+
+.arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #298EFF;
+    transition: 0.5s;
+    cursor: pointer;
+    position: fixed;
+    top: 92%;
+    right: 10px;
+}
+
+.arrow:hover{
+    background-color: #0078FF;
+}
+
+@media (max-width:575px){
+    .section3{
+        height: 1000px;
+    }
+}
+
+@media (max-width:768px){
+    section#contact{
+        height: 1200px;
+    }
+}
